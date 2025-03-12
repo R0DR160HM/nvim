@@ -8,4 +8,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.clipboard = "unnamedplus"
+vim.opt.incsearch = true
+
+vim.opt.termguicolors = true
+
