@@ -7,17 +7,22 @@ return require('packer').startup(function(use)
 	-- Telescope fuzzy finder
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.8',
-		requires = { {'nvim-lua/plenary.nvim'} }
+		requires = {
+            {'nvim-lua/plenary.nvim'},
+        }
 	}
 
 	-- Catpuccin theme
-	use ({ 
+	use ({
 		"catppuccin/nvim",
 		as = "catppuccin",
-		config = function()
-			vim.cmd('colorscheme catppuccin')
-		end
 	})
+
+    -- Rosepine theme
+    use({
+        "rose-pine/nvim",
+        as = "rose-pine"
+    })
 
 	-- Treesitter
 	use (
@@ -27,6 +32,7 @@ return require('packer').startup(function(use)
 
 	-- Git
 	use('tpope/vim-fugitive')
+    use('pwntester/octo.nvim')
 
 	-- LSP
 	use {

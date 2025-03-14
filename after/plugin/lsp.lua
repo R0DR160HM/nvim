@@ -3,9 +3,15 @@ local mason = require("mason")
 local mason_lspconfig = require("mason-lspconfig")
 local lspconfig = require("lspconfig")
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
 require'lspconfig'.gleam.setup{}
 require'lspconfig'.angularls.setup{}
 require'lspconfig'.ts_ls.setup{}
+require'lspconfig'.html.setup{
+    capabilities = capabilities
+}
 
 mason.setup()
 mason_lspconfig.setup({
@@ -19,6 +25,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
+  vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
 end
 
 -- Configure each LSP
