@@ -12,16 +12,18 @@ return require('packer').startup(function(use)
         }
 	}
 
-	-- Catpuccin theme
+	-- Theming 
 	use ({
 		"catppuccin/nvim",
 		as = "catppuccin",
 	})
-
-    -- Rosepine theme
     use({
         "rose-pine/nvim",
         as = "rose-pine"
+    })
+    use({
+        "Mofiqul/dracula.nvim",
+        as = "dracula"
     })
 
 	-- Treesitter
@@ -32,7 +34,7 @@ return require('packer').startup(function(use)
 
 	-- Git
 	use('tpope/vim-fugitive')
-    use('pwntester/octo.nvim')
+    use('f-person/git-blame.nvim')
 
 	-- LSP
 	use {
@@ -44,4 +46,18 @@ return require('packer').startup(function(use)
       "nvim-lua/plenary.nvim",             -- Required for some LSPs
 	}
 
+    -- Markdown
+    use({
+        'MeanderingProgrammer/render-markdown.nvim',
+        after = { 'nvim-treesitter' },
+        requires = {
+            { 'echasnovski/mini.nvim', opt = true },
+            { 'nvim-tree/nvim-web-devicons', opt = true}
+        }, -- if you use the mini.nvim suite
+        -- requires = { 'echasnovski/mini.icons', opt = true }, -- if you use standalone mini plugins
+        -- requires = { 'nvim-tree/nvim-web-devicons', opt = true }, -- if you prefer nvim-web-devicons
+        config = function()
+            require('render-markdown').setup({})
+        end,
+    })
 end)
