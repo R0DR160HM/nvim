@@ -60,4 +60,10 @@ return require('packer').startup(function(use)
             require('render-markdown').setup({})
         end,
     })
+
+    -- Status bar
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 end)
