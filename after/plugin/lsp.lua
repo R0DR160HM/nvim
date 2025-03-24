@@ -12,10 +12,11 @@ require'lspconfig'.ts_ls.setup{}
 require'lspconfig'.html.setup{
     capabilities = capabilities
 }
+require'lspconfig'.emmet_language_server.setup{}
 
 mason.setup()
 mason_lspconfig.setup({
-    ensure_installed = { "lua_ls", "pyright", "html", "cssls", "angularls", "html", "jdtls", "zls" }, -- Add LSPs here
+    ensure_installed = { "lua_ls", "pyright", "html", "cssls", "angularls", "html", "jdtls", "zls", "emmet_language_server" }, -- Add LSPs here
     automatic_installation = true,
 })
 
