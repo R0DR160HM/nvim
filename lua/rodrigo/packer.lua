@@ -36,6 +36,9 @@ return require('packer').startup(function(use)
 	use('tpope/vim-fugitive')
     use('f-person/git-blame.nvim')
 
+    -- Undotree
+    use('mbbill/undotree')
+
 	-- LSP
 	use {
 		{'neovim/nvim-lspconfig'},
