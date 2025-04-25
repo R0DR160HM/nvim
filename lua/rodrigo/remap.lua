@@ -11,3 +11,5 @@ vim.keymap.set("i", "<C-j>", "<C-n>")
 vim.keymap.set("i", "<C-k>", "<C-p>")
 
 vim.keymap.set("n", "<leader><F5>", vim.cmd.UndotreeToggle)
+
+vim.keymap.set("n", "<leader>t", vim.cmd.Term)
