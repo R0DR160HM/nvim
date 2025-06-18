@@ -52,4 +52,10 @@ return require('packer').startup(function(use)
     -- AI
     use ("supermaven-inc/supermaven-nvim")
 
+    -- Status bar
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+
 end)

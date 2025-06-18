@@ -1,6 +1,6 @@
 require("supermaven-nvim").setup({
     keymaps = {
-        accept_suggestion = "<Tab>",
+        accept_suggestion = "<C-j>",
         clear_suggestion = "<C-]>",
         accept_word = "<C-w>",
     },
