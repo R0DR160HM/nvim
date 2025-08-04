@@ -36,13 +36,10 @@ return require('packer').startup(function(use)
 	use('tpope/vim-fugitive')
     use('f-person/git-blame.nvim')
 
-    -- Undotree
-    use('mbbill/undotree')
-
 	-- LSP
 	use {
-		{'neovim/nvim-lspconfig'},
-		      "williamboman/mason.nvim",           -- LSP Installer
+	  "neovim/nvim-lspconfig",
+      "williamboman/mason.nvim",           -- LSP Installer
       "williamboman/mason-lspconfig.nvim", -- Bridge between Mason and lspconfig
       "hrsh7th/nvim-cmp",                  -- Completion plugin
       "hrsh7th/cmp-nvim-lsp",              -- LSP source for nvim-cmp
@@ -51,11 +48,5 @@ return require('packer').startup(function(use)
 
     -- AI
     use ("supermaven-inc/supermaven-nvim")
-
-    -- Status bar
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    }
 
 end)

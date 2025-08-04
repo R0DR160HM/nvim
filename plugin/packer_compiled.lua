@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\UserOtt\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\git-blame.nvim",
     url = "https://github.com/f-person/git-blame.nvim"
   },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\UserOtt\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "C:\\Users\\UserOtt\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
@@ -124,12 +119,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\UserOtt\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "C:\\Users\\UserOtt\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-web-devicons",
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\UserOtt\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -154,11 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\UserOtt\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  undotree = {
-    loaded = true,
-    path = "C:\\Users\\UserOtt\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
-    url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,
